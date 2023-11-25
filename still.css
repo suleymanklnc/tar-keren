@@ -1,0 +1,442 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+
+body {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+    opacity: 0.1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/*loading*/
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+}
+
+#loading img {
+    width: 200px;
+    height: 200px;
+}
+
+/*End of loading*/
+
+/*Header*/
+.header {
+    position: fixed;
+    z-index: 4000;
+    width: 100%;
+    padding: 2rem;
+    background-color: #030303;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 a {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 900;
+    transition: all .2s ease-out;
+}
+
+.header h1 a:hover {
+    color: royalblue;
+}
+
+.menuLinks li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header ul li a {
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 900;
+    transition: all .2s ease-out;
+}
+
+.header ul li a:hover {
+    color: royalblue;
+}
+
+/*End of Header*/
+
+/*Main*/
+
+.main {
+    background-image: url(images/main.jpg);
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.main h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 10rem;
+    color: royalblue;
+    transition: all .3s ease-in-out;
+
+}
+
+.main h2:hover {
+    color: whitesmoke;
+}
+
+.main h3 {
+    transition: all .3s ease-in-out;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 1200;
+    margin-top: 5rem;
+    color: wheat;
+}
+
+.main h3:hover {
+    color: royalblue;
+}
+
+/*End of Main*/
+
+/*abut me*/
+
+.container {
+    width: 100%;
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    width: 50%;
+    height: 50vh;
+    transition: all .3s ease-in-out;
+    margin-top: 6rem;
+}
+
+.card1:hover {
+    border: 1px solid grey;
+    border-radius: 50px;
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.card1 h3 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 2rem;
+}
+
+.card1 p {
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: azure;
+}
+
+.card2 {
+    transition: all .3s ease-in-out;
+    width: 50%;
+    height: 50vh;
+
+    margin-top: 6rem;
+}
+
+.card2:hover {
+    border: 1px solid grey;
+    border-radius: 50px;
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.card2 h3 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 2rem;
+
+}
+
+.card2 p {
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: azure;
+}
+
+.card3 {
+    transition: all .3s ease-in-out;
+    width: 50%;
+    height: 50vh;
+
+    margin-top: 6rem;
+}
+
+.card3:hover {
+    border: 1px solid grey;
+    border-radius: 50px;
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.card3 h3 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 2rem;
+
+}
+
+.card3 p {
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: azure;
+}
+
+.card4 {
+    width: 50%;
+    height: 50vh;
+    transition: all .3s ease-in-out;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.card4:hover {
+    border: 1px solid grey;
+    border-radius: 50px;
+    transform: scale(1.1);
+    cursor: grab;
+}
+
+.card4 h3 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 2rem;
+
+}
+
+.card4 p {
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: azure;
+}
+
+/*end of about me*/
+
+/*contact*/
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactCard {
+    width: 50%;
+    height: 50vh;
+    background-color: royalblue;
+    border-radius: 40px;
+    opacity: 0.2;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactCard h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: aliceblue;
+    margin-top: 1rem;
+}
+
+.contactCard p {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #151515;
+}
+
+.contactCard:hover {
+    opacity: 1;
+}
+
+/*end of contact*/
+
+/*social*/
+.social {
+    width: 100%;
+    height: 100vh;
+    background-color: #060606;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialcard {
+    width: 50%;
+    background-color: transparent;
+    border-radius: 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.socialcard:hover {
+    transition: all 0.5s ease-in-out;
+}
+
+.socialcard h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    color: royalblue;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.socialcard p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: whitesmoke;
+    padding: 4rem 0;
+}
+
+.socialcard p a {
+    color: whitesmoke;
+}
+
+/*end of social*/
+
+/*footer*/
+footer {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+footer h1 {
+    color: beige;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+/*end footer*/
+
+
+@media screen and (max-width: 950px) {
+    .card1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card1:hover {
+        transform: scale(1);
+    }
+
+    .card2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card2:hover {
+        transform: scale(1);
+    }
+
+    .card3 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card3:hover {
+        transform: scale(1);
+    }
+
+    .card4 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card4:hover {
+        transform: scale(1);
+    }
+
+    .contactCard {
+        width: 100%;
+    }
+}
